@@ -1,0 +1,17 @@
+<datasources>
+    //...
+    <datasource jta="true" jndi-name="java:jboss/datasources/nomePU" pool-name="nomePU" enabled="true" use-ccm="true">
+        <connection-url>jdbc:mysql://localhost:3306/nomeDataBase?useTimezone=true&amp;serverTimezone=UTC</connection-url>
+        <driver-class>com.mysql.jdbc.Driver</driver-class>
+        <driver>mysql</driver>
+        <security>
+            <user-name>root</user-name>
+        </security>
+    </datasource>
+    <drivers>
+        //...
+        <driver name="mysql" module="com.mysql.Driver">
+            <driver-class>com.mysql.jdbc.Driver</driver-class>
+        </driver>
+    </drivers>
+</datasources>
